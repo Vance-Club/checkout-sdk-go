@@ -61,6 +61,7 @@ type (
 		Installment                   *Installment               `json:"installment,omitempty"`
 		Optimization                  *Optimization              `json:"optimization,omitempty"`
 		InitialTransaction            *InitialTransaction        `json:"initial_transaction,omitempty"`
+		Customer                      *common.CustomerRequest    `json:"customer,omitempty"`
 	}
 
 	ThreeDsMethodCompletionRequest struct {
