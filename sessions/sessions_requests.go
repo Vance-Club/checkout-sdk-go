@@ -63,7 +63,7 @@ type (
 		Optimization                  *Optimization              `json:"optimization,omitempty"`
 		InitialTransaction            *InitialTransaction        `json:"initial_transaction,omitempty"`
 		Customer                      *common.CustomerRequest    `json:"customer,omitempty"`
-		Sender                        *nas.Sender                `json:"sender,omitempty"`
+		Sender                        nas.Sender                 `json:"sender,omitempty"`
 	}
 
 	ThreeDsMethodCompletionRequest struct {
