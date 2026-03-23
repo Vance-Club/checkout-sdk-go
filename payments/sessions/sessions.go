@@ -82,9 +82,10 @@ type (
 	}
 
 	PaymentSessionsResponse struct {
-		HttpMetadata        common.HttpMetadata
-		Id                  string                 `json:"id,omitempty"`
-		PaymentSessionToken string                 `json:"payment_session_token,omitempty"`
-		Links               map[string]common.Link `json:"links,omitempty"`
+		HttpMetadata          common.HttpMetadata
+		Id                    string                 `json:"id,omitempty"`
+		PaymentSessionToken   string                 `json:"payment_session_token,omitempty"`
+		PaymentSessionSecret  string                 `json:"payment_session_secret,omitempty"`
+		Links                 map[string]common.Link `json:"links,omitempty"`
 	}
 )
